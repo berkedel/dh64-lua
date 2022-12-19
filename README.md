@@ -9,8 +9,8 @@ Randomly generate a pair of 64-bit private and public key
 ```lua
 local dh64 = require "dh64"
 
-local privKey1, pubKey1 = dh64.pair()
-local privKey2, pubKey2 = dh64.pair()
+local privKey1, pubKey1 = dh64.pairKey()
+local privKey2, pubKey2 = dh64.pairKey()
 ```
 
 After obtaining the public key above, pass it to the other party through the network. After two parties get each other's public key, they can use their own private key and the other's public key to calculate the secret key.
